@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header>
+        <nav class="main-nav">
+            <ul class="nav-menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="sala1.html">Sala 1</a></li>
+                <li><a href="sala2.html">Sala 2</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Contacto</h1>
+            <p>Si tienes alguna pregunta o comentario, no dudes en ponerte en contacto con nosotros.</p>
+        </section>
+
+        <section class="formuario">
+            <form action="#" method="get">
+
+                <div class="caja">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="caja">
+                <labbel for="surname">Apellidos:</labbel>
+                <input type="text" id="surname" name="surname">
+                </div>   
+                <div class="caja">
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="caja">
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+
+                <div class="cajargpd">
+                    <input type="checkbox" id="rgpd" name="rgpd" required>
+                    Acepto las <a href="rgpd.html">políticas de privacidad </a> de este sitio web.
+                </div>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </body>
+</html>
