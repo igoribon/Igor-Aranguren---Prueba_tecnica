@@ -210,8 +210,7 @@ footer p a:hover{
 }
 .redes {
     display: flex;
-    justify-content: left;
-    gap: 1rem;
+    justify-content: center;
 }
 
 footer li {
