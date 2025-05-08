@@ -54,3 +54,36 @@ function actualizarReloj() {
 }
 
 window.onload = actualizarReloj;
+
+
+//Funcionalidad para revisar si se ha logueado correctamente en la página de login
+const loginForm = document.getElementById('loginForm');
+if (loginForm) {
+    loginForm.addEventListener('submit', async function(e) {
+        e.preventDefault();
+        const usuario = document.getElementById('usuario').value;
+        const password = document.getElementById('password').value;
+
+        try {
+            const response = await fetch('assets/usuarios.json');
+            if (!response.ok) {
+                throw new Error('Error al cargar los datos de usuarios');
+            }
+            const data = await response.json();
+            
+            const usuarioEncontrado = data.users.find(u => 
+                u.nombre === usuario && u.password === password
+            );
+
+            if (usuarioEncontrado) {
+                alert('Login exitoso');
+                this.reset();
+            } else {
+                alert('Usuario o contraseña incorrectos');
+            }
+        } catch (error) {
+            console.error('Error:', error);
+            alert('Error al procesar el login');
+        }
+    });
+}
