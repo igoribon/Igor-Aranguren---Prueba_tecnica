@@ -37,3 +37,20 @@ if (rgpdcheckbox && submitBtn) {
         submitBtn.disabled = !this.checked; 
     });
 };
+
+
+//Funcionalidad para poner el reloj en el header de la página de inicio
+function actualizarReloj() {
+    const reloj = document.getElementById('reloj');
+    const fecha = new Date();
+    const diasSemana = ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado'];
+    const dia = diasSemana[fecha.getDay()];
+    const horas = String(fecha.getHours()).padStart(2, '0');
+    const minutos = String(fecha.getMinutes()).padStart(2, '0');
+    const segundos = String(fecha.getSeconds()).padStart(2, '0');
+
+    reloj.textContent = `${dia} ${horas}:${minutos}:${segundos}`;
+    setTimeout(actualizarReloj, 1000);
+}
+
+window.onload = actualizarReloj;
