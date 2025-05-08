@@ -12,11 +12,11 @@ El autor es Igor Aranguren. Email: igoribon@gmail.com
 * La página de login tiene una opción de mostrar la contraseeña introducida al clicar sobre el ojo cerrado momento en el que este cambia a abierto.
 
 * También comprueba si el usuario se ha registrado correctamente comparando los datos introducidos con el archivo json de la carpeta assets. Hay dos usarios ya registrados:
-    -usuario: admin
-    -pasword: admin123
+    * usuario: admin
+    * pasword: admin123
 
-    -usuario: usuario
-    -passwrod: usuario123
+    * usuario: usuario
+    * passwrod: usuario123
 
 Cualquier otro usuario o password introducido dará un mensaje de error.
 
