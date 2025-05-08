@@ -59,7 +59,7 @@ header {
     font-size: 1rem;
     color: #ffffff;
     margin-left: 1rem;
-    
+    margin-top: 1rem   
 }
 
 /* Main */
@@ -204,7 +204,7 @@ footer {
 
 footer p {
     text-align: center;
-    margin: 0.5;
+    margin: 0.5rem;
     padding: 0;
 }
 footer p a {
@@ -222,7 +222,7 @@ footer p a:hover{
 footer li {
     list-style: none;
     display: inline-block;
-    margin: 0 1rem;
+    margin: 1rem 1rem;
 }
 footer li a {
     color: white;
